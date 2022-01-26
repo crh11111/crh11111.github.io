@@ -41,7 +41,7 @@ onMounted(() => {
 </script>
 <style scoped>
 #dplayer {
-  width: 800px;
+  width: 100%;
   margin: 100px auto;
   border-radius: 4px;
 }
