@@ -27,6 +27,13 @@ const friends = [
     avatar: "https://keepke.com/logo.png",
     blog_img: "https://s3.bmp.ovh/imgs/2022/01/ea99c10fe223f4a7.png",
   },
+  {
+    name: "崽崽博客",
+    motto: "一个可爱崽",
+    url: "https://xll.cc",
+    avatar: "https://xll.cc/wj/photo/tx.jpg",
+    blog_img: "https://s3.bmp.ovh/imgs/2022/01/e6f22bb295e12a22.png",
+  },
 ];
 
 export default friends;
