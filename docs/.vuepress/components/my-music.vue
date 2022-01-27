@@ -4,11 +4,12 @@
 
 <script setup>
 import { defineProps, toRefs } from "vue";
-import ids from "./music";
+import store from "../store/index";
+let { musicIds } = toRefs(store);
 
 const props = defineProps({
   id: String,
 });
 let { id } = toRefs(props);
-ids.push(id);
+musicIds.value.push(id);
 </script>

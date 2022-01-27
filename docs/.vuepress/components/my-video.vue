@@ -4,7 +4,7 @@
     playsinline
     controls
     :data-poster="indexBg"
-    v-show="isLoad"
+    v-show="videoIsShow"
     :crossorigin="src.includes('http')"
   >
     <source
@@ -16,7 +16,8 @@
 
 <script setup>
 import { defineProps, toRefs, ref } from "vue";
-import isLoad from "./video";
+import store from "../store/index";
+let { videoIsShow } = toRefs(store);
 
 const props = defineProps({
   indexBg: String,

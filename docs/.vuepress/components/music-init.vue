@@ -1,8 +1,9 @@
 <template></template>
 
 <script setup>
-import { onMounted } from "vue";
-import ids from "./music";
+import { onMounted, toRefs } from "vue";
+import store from "../store/index";
+let { musicIds } = toRefs(store);
 
 onMounted(() => {
   const head = document.querySelector("head");
@@ -19,9 +20,9 @@ onMounted(() => {
       if (APlayer) {
         clearInterval(timer);
         const aplayers = Array.from(document.querySelectorAll(".aplayer"));
-        for (let i = 0; i < ids.length; i++) {
+        for (let i = 0; i < musicIds.value.length; i++) {
           let url = `https://api.i-meto.com/meting/api?server=netease&type=song&id=${
-            ids[i].value
+            musicIds.value[i].value
           }&r=${Math.random()}`;
           fetch(url)
             .then((res) => res.json())

@@ -2,7 +2,6 @@
   <div>
     <input type="text" v-model="pianName" placeholder="看点什么吧" />
     <button @click="kanpian">看片</button>
-
     <div id="dplayer"></div>
   </div>
 </template>
@@ -13,7 +12,6 @@ const kanpian = () => {
   fetch(`https://apis.jxcxin.cn/api/jx?url=${pianName.value}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       const dp = new DPlayer({
         container: document.getElementById("dplayer"),
         video: {

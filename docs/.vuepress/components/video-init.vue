@@ -1,9 +1,11 @@
 <template></template>
 <script setup>
-import { onMounted, onUnmounted } from "vue";
-import isLoad from "./video";
+import { onMounted, onUnmounted, toRefs } from "vue";
+import store from "../store/index";
+let { videoIsShow } = toRefs(store);
+
 onUnmounted(() => {
-  isLoad.value = false;
+  videoIsShow.value = false;
 });
 onMounted(() => {
   const head = document.querySelector("head");
@@ -22,7 +24,7 @@ onMounted(() => {
         Array.from(document.querySelectorAll(".player")).map(
           (p) => new Plyr(p)
         );
-        isLoad.value = true;
+        videoIsShow.value = true;
       }
     } catch (error) {}
   }, 500);

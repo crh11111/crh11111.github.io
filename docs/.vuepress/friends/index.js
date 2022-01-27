@@ -16,8 +16,8 @@ const friends = [
   {
     name: "Smile",
     motto: "分享各种学习心得和遇到的问题",
-    url: "http://47.98.109.90/blog/index",
-    avatar: "https://s3.bmp.ovh/imgs/2022/01/fdc9bfd52dcb6cb5.jpg",
+    url: "https://taoyida.top/blog/index",
+    avatar: "https://taoyida.top/static/img/bozhu.jpg",
     blog_img: "https://s3.bmp.ovh/imgs/2022/01/0e1ca1a6a3a71a86.png",
   },
   {
