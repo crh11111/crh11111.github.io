@@ -82,7 +82,10 @@ onMounted(() => {
   position: absolute;
   top: 2px;
   right: 10px;
-  background: url("../public/copy-gray.svg") no-repeat;
+  /* background: url("../public/copy-gray.svg") no-repeat; */
+  /* background-size: cover; */
+  background-image: url("../public/copy-gray.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
   transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
@@ -90,8 +93,7 @@ onMounted(() => {
 }
 
 .copy:hover {
-  background: url("../public/copy.svg") no-repeat;
-  background-size: cover;
+  background-image: url("../public/copy.svg");
   transform: translateY(-2px);
 }
 @font-face {
