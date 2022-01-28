@@ -69,4 +69,13 @@ module.exports = {
       children: [],
     },
   ],
+  "/life/note/": [
+    {
+      text: "随记",
+      title: "随记",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["2022-1-28.md"],
+    },
+  ],
 };

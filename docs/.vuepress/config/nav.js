@@ -5,7 +5,7 @@ module.exports = [
   {
     text: "生活",
     children: [
-      { text: "随记", link: "/life/note" },
+      { text: "随记", link: "/life/note/2022-1-28" },
       { text: "游戏", link: "/life/game" },
       { text: "魔方", link: "/life/cube" },
       { text: "书籍", link: "/life/book" },
