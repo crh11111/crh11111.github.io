@@ -36,6 +36,6 @@ let { indexBg, src } = toRefs(props);
   border-radius: 4px;
 }
 :root {
-  --plyr-color-main: #3eaf7c;
+  --plyr-color-main: #9f46f3;
 }
 </style>

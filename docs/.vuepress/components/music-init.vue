@@ -30,7 +30,7 @@ onMounted(() => {
               let song = data[0];
               new APlayer({
                 container: aplayers[i],
-                theme: "#3eaf7c",
+                theme: "#9f46f3",
                 loop: "loop",
                 lrcType: 3,
                 audio: [

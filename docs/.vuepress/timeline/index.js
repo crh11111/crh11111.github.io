@@ -1,6 +1,17 @@
 const timeLine = [
   {
     type: "acticle",
+    title: "新增Valine评论插件自动获取qq头像功能",
+    date: "01-28",
+  },
+  {
+    type: "acticle",
+    title: "关于我",
+    date: "01-28",
+    link: "/about/me/",
+  },
+  {
+    type: "acticle",
     title: "新增视频音频播放器组件",
     date: "01-26",
   },

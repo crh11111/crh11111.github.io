@@ -82,8 +82,6 @@ onMounted(() => {
   position: absolute;
   top: 2px;
   right: 10px;
-  /* background: url("../public/copy-gray.svg") no-repeat; */
-  /* background-size: cover; */
   background-image: url("../public/copy-gray.svg");
   background-repeat: no-repeat;
   background-size: cover;

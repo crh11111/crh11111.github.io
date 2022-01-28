@@ -13,10 +13,7 @@
 import { defineProps, PropType, toRefs, computed } from "vue";
 
 interface props {
-  customMode?: boolean;
   type?: string;
-  lineColor?: string;
-  bgColor?: string;
 }
 
 const replaceTypeText = computed(() => {
@@ -36,21 +33,19 @@ const replaceTypeText = computed(() => {
   };
 });
 const props = defineProps({
-  customMode: Boolean,
   type: {
     type: String as PropType<"info" | "warn" | "error" | "success" | "primary">,
     default: "primary",
   },
-  lineColor: String,
-  bgColor: String,
+  color: String,
 });
-let { customMode, type, lineColor, bgColor } = toRefs(props);
+let { type } = toRefs(props);
 </script>
 
 <style>
 :root {
-  --t-info: #909399;
-  --t-info-w: #d5d8dd;
+  --t-info: #558aee;
+  --t-info-w: #d1dff6;
   --t-warn: #d39014;
   --t-warn-w: #f5d5b1;
   --t-error: #e03a2b;
@@ -104,7 +99,6 @@ let { customMode, type, lineColor, bgColor } = toRefs(props);
   border-left: 5px solid;
   min-height: 120px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* box-shadow: 0 14px 38px rgb(0 0 0 / 8%), 0 3px 8px rgb(0 0 0 / 6%); */
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,

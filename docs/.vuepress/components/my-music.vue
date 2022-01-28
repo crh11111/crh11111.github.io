@@ -13,3 +13,10 @@ const props = defineProps({
 let { id } = toRefs(props);
 musicIds.value.push(id);
 </script>
+
+<style scoped>
+.aplayer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+</style>

@@ -33,7 +33,7 @@ next:
 ## <my-title textColor_h="#1de7cc" lineColor="#1de7cc">宇智波天生邪恶的小鬼</my-title>
 
 <text-block title="Video" color="rgb(85, 138, 238)">
-<my-video  src="/zuozhu2.mp4"/>
+<my-video  src="https://v5-i.douyinvod.com/5377ea5f832a4fa0f3772bf25ddd8ddc/61f657f1/video/tos/cn/tos-cn-ve-15-alinc2/9979d416987e4c73bd5854f7cd524de3/?a=1128&br=787&bt=787&cd=0%7C0%7C0%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&ft=5f4rKJmmnPEC2Th7ThWwkXAGfdH.ClhhoBZc&l=202201281718290102120771493B032D84&lr=&mime_type=video_mp4&net=0&pl=0&qs=0&rc=Mzw1eWk6Zjp1OjMzNGkzM0ApaGRkZzlnZzxpNzkzaGdlOWcpaGRqbGRoaGRmX29yaHI0by40YC0tZC0vc3MwM2BhMmNfYzIxNmIwY2AyOmNwb2wrbStqdDo%3D&vl=&vr="/>
 </text-block>
 
 <video-init/>
