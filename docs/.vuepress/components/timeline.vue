@@ -29,7 +29,7 @@ import timeline from "../timeline/index";
 <style scoped>
 @font-face {
   font-family: "fira-code";
-  src: url("../public/FiraCode-Medium.ttf");
+  src: url("../public/font/FiraCode-Medium.ttf");
 }
 .timeline {
   position: relative;

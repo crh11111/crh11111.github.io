@@ -1,6 +1,11 @@
 const timeLine = [
   {
     type: "acticle",
+    title: "新增随机背景图功能",
+    date: "01-29",
+  },
+  {
+    type: "acticle",
     title: "初雪",
     date: "01-28",
     link: "/life/note/2022-1-28",
