@@ -5,7 +5,7 @@ import store from "../store/index";
 onMounted(() => {
   const toggle_dark_button = document.querySelector(".toggle-dark-button");
   const html = document.querySelector("html");
-  const app = document.querySelector("#app");
+  const page = document.querySelector(".page");
   const hours = new Date().getHours();
   const getRandom = (start, end) => {
     //获得指定区间的随机数
@@ -17,7 +17,7 @@ onMounted(() => {
     theme.value = html.className.includes("dark") ? "dark" : "light";
     if (html.className.includes("dark")) {
       //深色模式
-      app.style.cssText = `
+      page.style.cssText = `
      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==);
      background-repeat: repeat;
      background-attachment: fixed;
@@ -25,11 +25,8 @@ onMounted(() => {
       `;
     } else {
       //浅色模式
-      // /imgs/bodyBG.png
-      // https://apis.jxcxin.cn/api/dmimg
-      // background-size:cover;
-      const randomNum = getRandom(1, 5);
-      app.style.cssText = `
+      const randomNum = getRandom(1, 4);
+      page.style.cssText = `
        background: url(/imgs/bodyBG${randomNum}.png);
        background-repeat: repeat;
        background-attachment: fixed;
@@ -61,8 +58,10 @@ onMounted(() => {
 }
 #app {
   /* background: url(/imgs/bodyBG.png); */
+  /* background: url(/img);
   background-repeat: repeat;
   background-attachment: fixed;
+  background-size: cover; */
   min-height: 100vh;
   font-family: "fira-code" !important;
   font-size: 16px !important;
