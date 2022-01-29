@@ -14,7 +14,7 @@ lastUpdated: true
 欢迎各位大佬交换友链！请在下面评论区留下，博主会定期添加上去，格式如下   ↓<br>
 </tips>
 
-# <my-title textColor_h="rgb(133, 28, 231)" lineColor="rgb(133, 28, 231)">本站友链信息</my-title>
+# <my-title textColor_h="var(--c-brand)" lineColor="var(--c-brand)">本站友链信息</my-title>
 
 <style>
  .my-blog-info {
@@ -32,13 +32,13 @@ lastUpdated: true
 }
 </style>
 
-<text-block color="rgb(133, 28, 231)" title="Info">
+<text-block color="var(--c-brand)" title="Info">
  <div class="my-blog-info" >
       <div>
-        网站名称：<span style="color: rgb(133, 28, 231)">微若蜉蝣</span>
+        网站名称：<span style="color: var(--c-brand)">微若蜉蝣</span>
       </div>
       <div>
-        网站描述：<span style="color: rgb(133, 28, 231)"
+        网站描述：<span style="color: var(--c-brand)"
           >芸芸众生，皆为蜉蝣</span
         >
       </div>
@@ -46,7 +46,7 @@ lastUpdated: true
         网站地址：<a
           href="https://fuyouplus.cn/"
           target="_blank"
-          style="color: rgb(133, 28, 231)"
+          style="color: var(--c-brand)"
           >https://fuyouplus.cn/</a
         >
       </div>
@@ -54,14 +54,14 @@ lastUpdated: true
         友链头像：<a
           href="https://fuyouplus.cn/tx.jpg"
           target="_blank"
-          style="color: rgb(133, 28, 231)"
+          style="color: var(--c-brand)"
           >https://fuyouplus.cn/tx.jpg</a
         >
       </div>
     </div>
 </text-block>
 
-# <my-title textColor_h="rgb(133, 28, 231)" lineColor="rgb(133, 28, 231)">友链列表</my-title>
+# <my-title textColor_h="var(--c-brand)" lineColor="var(--c-brand)">友链列表</my-title>
 
 <friends/>
 

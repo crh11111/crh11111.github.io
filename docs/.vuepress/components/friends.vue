@@ -86,7 +86,7 @@ import friends from "../friends/index";
   font-size: 16px;
   text-align: center;
   line-height: 75px;
-  color: #851ce7;
+  color: var(--c-brand);
   font-weight: bold;
 }
 </style>

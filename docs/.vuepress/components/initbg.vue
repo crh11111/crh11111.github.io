@@ -68,17 +68,17 @@ onMounted(() => {
 }
 * ::selection {
   color: #fff;
-  background-color: #3eaf7c;
+  background-color: var(--c-brand);
 }
 
 * ::-moz-selection {
   color: #fff;
-  background-color: #3eaf7c;
+  background-color: var(--c-brand);
 }
 
 *::-webkit-selection {
   color: #fff;
-  background-color: #3eaf7c;
+  background-color: var(--c-brand);
 }
 
 *::-webkit-scrollbar,

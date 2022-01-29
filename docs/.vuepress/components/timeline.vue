@@ -74,7 +74,7 @@ import timeline from "../timeline/index";
   position: relative;
 }
 .timeline .year::before {
-  background: #851ce7;
+  background: var(--c-brand);
   box-shadow: 0 0 1px 1px #bdbdbd;
   border: 1px solid #fff;
   border-radius: 50%;

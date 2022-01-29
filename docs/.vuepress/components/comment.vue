@@ -8,7 +8,7 @@
         class="leancloud_visitors"
         data-flag-title="Your Article Title"
       >
-        <em class="post-meta-item-text">阅读量 </em>
+        <em class="post-meta-item-text">阅读量:</em>
         <i class="leancloud-visitors-count">0</i>
       </span>
     </div>
@@ -86,6 +86,9 @@ onMounted(() => {
 <style scoped>
 #vcomments {
   margin-top: 20px;
+}
+.leancloud-visitors-count {
+  color: var(--c-brand);
 }
 </style>
 

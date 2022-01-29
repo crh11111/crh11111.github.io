@@ -51,7 +51,7 @@ input {
   padding-left: 20px;
   box-sizing: border-box;
   border-radius: 15px;
-  border: 3px solid #3eaf7c;
+  border: 3px solid var(--c-brand);
 }
 button {
   width: 90%;
@@ -64,5 +64,7 @@ button {
   display: block;
   margin: 0 auto;
   border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 </style>

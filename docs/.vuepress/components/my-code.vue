@@ -101,7 +101,7 @@ code {
   line-height: 28px !important;
 }
 .line-number {
-  color: #5aebbf;
+  color: var(--c-brand);
   font-size: 20px !important;
   font-weight: bold;
 }
