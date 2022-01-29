@@ -2,7 +2,8 @@
   <div></div>
 </template>
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, toRefs } from "vue";
+import store from "../store/index";
 onMounted(() => {
   const toggle_dark_button = document.querySelector(".toggle-dark-button");
   const html = document.querySelector("html");
@@ -10,11 +11,8 @@ onMounted(() => {
   const hours = new Date().getHours();
 
   const initTheme = () => {
-    let text_block_header;
-    const t1 = setTimeout(() => {
-      text_block_header = document.querySelectorAll(".text-block-header");
-      window.clearTimeout(t1);
-    }, 100);
+    let { theme } = toRefs(store);
+    theme.value = html.className.includes("dark") ? "dark" : "light";
     if (html.className.includes("dark")) {
       //深色模式
       page.style.cssText = `
@@ -23,15 +21,6 @@ onMounted(() => {
        background-attachment: fixed;
       min-height: 100vh;
       `;
-
-      const t2 = setTimeout(() => {
-        text_block_header.forEach((el) => {
-          el.style.cssText = `
-      background: rgba(27, 30, 43, 0.9);
-      `;
-        });
-        window.clearTimeout(t2);
-      }, 100);
     } else {
       //浅色模式
       page.style.cssText = `
@@ -40,24 +29,14 @@ onMounted(() => {
        background-attachment: fixed;
       min-height: 100vh;
       `;
-      const t3 = setTimeout(() => {
-        text_block_header.forEach((el) => {
-          el.style.cssText = `
-      background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3);
-      `;
-        });
-
-        window.clearTimeout(t3);
-      }, 100);
     }
   };
   initTheme();
   toggle_dark_button.addEventListener("click", () => {
     initTheme();
   });
-  if (hours >= 18 && !html.className.includes("dark")) {
+  if ((hours >= 18 || hours <= 5) && !html.className.includes("dark")) {
     toggle_dark_button.click();
-
     setTimeout(() => {
       initTheme();
     }, 0);

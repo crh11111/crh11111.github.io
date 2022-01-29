@@ -55,6 +55,10 @@ onMounted(() => {
         clearInterval(timer2);
         const vsubmit = document.querySelector(".vsubmit");
         vsubmit.addEventListener("click", () => {
+          // autocomplete="off"
+          // document.querySelector(".vnick").value = "";
+          // document.querySelector(".vmail").value = "";
+          // document.querySelector(".vlink").value = "";
           setTimeout(() => {
             Array.from(document.querySelectorAll(".vimg")).forEach((item) => {
               const email = item.getAttribute("email");

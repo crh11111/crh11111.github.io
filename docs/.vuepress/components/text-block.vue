@@ -1,6 +1,13 @@
 <template>
   <div class="text-block">
-    <div class="text-block-header">
+    <div
+      class="text-block-header"
+      :style="
+        theme == 'light'
+          ? 'background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3);'
+          : 'background: rgba(27, 30, 43, 0.9);'
+      "
+    >
       <div class="circle one"></div>
       <div class="circle two"></div>
       <div class="circle three"></div>
@@ -15,6 +22,8 @@
 
 <script setup>
 import { defineProps, toRefs } from "vue";
+import store from "../store/index";
+let { theme } = toRefs(store);
 const props = defineProps({
   color: String,
   title: String,
