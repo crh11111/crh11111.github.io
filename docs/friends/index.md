@@ -52,10 +52,10 @@ lastUpdated: true
       </div>
       <div>
         友链头像：<a
-          href="https://fuyouplus.cn/tx.jpg"
+          href="https://fuyouplus.cn/imgs/tx.jpg"
           target="_blank"
           style="color: var(--c-brand)"
-          >https://fuyouplus.cn/tx.jpg</a
+          >https://fuyouplus.cn/imgs/tx.jpg</a
         >
       </div>
     </div>
