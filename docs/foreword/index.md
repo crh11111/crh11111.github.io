@@ -33,7 +33,7 @@ next:
 ## <my-title textColor_h="#1de7cc" lineColor="#1de7cc">宇智波天生邪恶的小鬼</my-title>
 
 <text-block title="Video" color="rgb(85, 138, 238)">
-<my-video  src="/zuozhu2.mp4"/>
+<my-video  src="/video/zuozhu2.mp4"/>
 </text-block>
 
 <video-init/>

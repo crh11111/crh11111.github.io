@@ -4,13 +4,12 @@ const sidebar = require("./config/sidebar");
 
 module.exports = {
   lang: "zh-CN",
-  head: [["link", { rel: "icon", href: "/logo.svg" }]],
+  head: [["link", { rel: "icon", href: "/imgs/logo.svg" }]],
   title: "微若蜉蝣",
   description: "微若蜉蝣的个人博客",
-  // theme: "@vuepress/theme-default",
   theme: path.resolve(__dirname, "./theme/index.js"),
   themeConfig: {
-    logo: "/logo.svg",
+    logo: "/imgs/logo.svg",
     navbar: navs,
     sidebar: sidebar,
     contributors: true,

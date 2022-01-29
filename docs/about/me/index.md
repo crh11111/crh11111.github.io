@@ -18,7 +18,7 @@ lastUpdated: true
 </text-block>
 
 <text-block title="Video" color="rgb(85, 138, 238)">
-<my-video  src="/zuozhu4.mp4"/>
+<my-video  src="/video/zuozhu4.mp4"/>
 </text-block>
 
 <video-init/>
@@ -36,12 +36,7 @@ lastUpdated: true
 </text-block>
 
 <text-block title="Music" color="rgb(85, 138, 238)">
-<my-music id="1912603719"/>
-<my-music id="165355"/>
-<my-music id="1415829224"/>
-<my-music id="1396141677"/>
-<my-music id="1475073518"/>
-<my-music id="1423241987"/>
+<my-music id="208891"/>
 </text-block>
 
 <music-init/>

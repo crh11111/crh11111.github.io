@@ -1,7 +1,7 @@
 <template>
   <div class="not-found-page">
     <div class="header">
-      <img src="../public/logo.svg" alt="" class="logo" @click="goHome" />
+      <img src="../public/imgs/logo.svg" alt="" class="logo" @click="goHome" />
       <span class="name" @click="goHome">微若蜉蝣</span>
     </div>
     <div class="main-page">
@@ -14,7 +14,7 @@
       </div>
       <div class="right">
         <img
-          src="../public/404.gif"
+          src="../public/imgs/404.gif"
           width="313"
           height="482"
           alt="Girl has dropped her ice cream."

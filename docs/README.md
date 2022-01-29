@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /tx.jpg
+heroImage: /imgs/tx.jpg
 heroText: 微若蜉蝣
 tagline: 日记、笔记、博客
 actions:

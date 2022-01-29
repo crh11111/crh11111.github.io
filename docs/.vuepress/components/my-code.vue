@@ -1,10 +1,3 @@
-<template>
-  <!-- <div class="codebox-header">
-    <div class="circle one"></div>
-    <div class="circle two"></div>
-    <div class="circle three"></div>
-  </div> -->
-</template>
 <script setup>
 import { onMounted } from "vue";
 
@@ -82,7 +75,7 @@ onMounted(() => {
   position: absolute;
   top: 2px;
   right: 10px;
-  background-image: url("../public/copy-gray.svg");
+  background-image: url("../public/imgs/copy-gray.svg");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
@@ -91,12 +84,12 @@ onMounted(() => {
 }
 
 .copy:hover {
-  background-image: url("../public/copy.svg");
+  background-image: url("../public/imgs/copy.svg");
   transform: translateY(-2px);
 }
 @font-face {
   font-family: "fira-code";
-  src: url("../public/FiraCode-Medium.ttf");
+  src: url("../public/font/FiraCode-Medium.ttf");
 }
 code {
   font-family: "fira-code";

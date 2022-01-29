@@ -21,7 +21,7 @@ onMounted(() => {
     } else {
       //浅色模式
       page.style.cssText = `
-       background: url(/bodyBG.png);
+       background: url(/imgs/bodyBG.png);
        background-repeat: repeat;
        background-attachment: fixed;
       min-height: 100vh;
@@ -43,10 +43,10 @@ onMounted(() => {
 <style>
 @font-face {
   font-family: "fira-code";
-  src: url("../public/FiraCode-Medium.ttf");
+  src: url("../public/font/FiraCode-Medium.ttf");
 }
-#app .page {
-  background: url(/bodyBG.png);
+#app .page {  
+  background: url(/imgs/bodyBG.png);
   background-repeat: repeat;
   background-attachment: fixed;
   min-height: 100vh;
