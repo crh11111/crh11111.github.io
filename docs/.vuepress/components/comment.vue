@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { onMounted, defineProps, nextTick } from "vue";
+import { onMounted, defineProps } from "vue";
 const props = defineProps({
   redNum: {
     type: Boolean,

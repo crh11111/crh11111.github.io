@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { defineProps, toRefs, ref } from "vue";
+import { defineProps, toRefs } from "vue";
 import store from "../store/index";
 let { videoIsShow } = toRefs(store);
 
