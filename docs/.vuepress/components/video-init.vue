@@ -1,4 +1,3 @@
-<template></template>
 <script setup>
 import { onMounted, onUnmounted, toRefs } from "vue";
 import store from "../store/index";

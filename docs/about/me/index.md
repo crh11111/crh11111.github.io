@@ -31,19 +31,9 @@ lastUpdated: true
 爱好：写代码、魔方、玩游戏、篮球、乒乓球、听歌、追剧、看书
 </p>
 <p style="text-indent:1em;font-size:16px;">
-年龄：00后
+年龄：{{ new Date().getFullYear().toString().slice(2) }}
 </p>
 </text-block>
-
-
-<tips type="info">
-<template v-slot:title>
-小蝣说：
-</template>
-分享几首博主最近喜欢听的歌(此歌单会不断更新)
-</tips>
-
-
 
 <text-block title="Music" color="rgb(85, 138, 238)">
 <my-music id="1912603719"/>
