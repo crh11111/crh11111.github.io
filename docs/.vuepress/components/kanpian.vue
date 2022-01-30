@@ -9,7 +9,9 @@
 import { ref, onMounted } from "vue";
 const pianName = ref("");
 const kanpian = () => {
-  fetch(`https://apis.jxcxin.cn/api/jx?url=${pianName.value}`)
+  fetch(
+    `https://apis.jxcxin.cn/api/jx?apiKey=dbaddf2225d05bbb21e0663bce935571&url=${pianName.value}`
+  )
     .then((res) => res.json())
     .then((data) => {
       const dp = new DPlayer({
@@ -24,8 +26,7 @@ const kanpian = () => {
 onMounted(() => {
   const head = document.querySelector("head");
   const scriptEl = document.createElement("script");
-  scriptEl.src =
-    "https://cdn.bootcdn.net/ajax/libs/dplayer/1.26.0/DPlayer.min.js";
+  scriptEl.src = "https://cdn.jsdelivr.net/npm/dplayer@1.26.0";
   head.appendChild(scriptEl);
   const timer = setInterval(() => {
     try {
