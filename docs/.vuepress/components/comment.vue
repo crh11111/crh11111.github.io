@@ -1,15 +1,20 @@
 <template>
   <section
-    style="border-top: 2px solid #eaecef; padding-top: 1rem; margin-top: 2rem"
+    class="my-comment"
+    :style="{
+      background:
+        theme == 'dark' ? 'rgba(45, 49, 56, 0.8)' : 'rgba(255, 255, 255, 0.8)',
+    }"
   >
-    <div v-if="redNum">
+    <div v-if="redNum" class="redNum">
       <span
         :id="pathName"
         class="leancloud_visitors"
         data-flag-title="Your Article Title"
       >
-        <em class="post-meta-item-text">阅读量:</em>
+        <em class="post-meta-item-text">热度：</em>
         <i class="leancloud-visitors-count">0</i>
+        <span> ℃ </span>
       </span>
     </div>
     <div id="vcomments"></div>
@@ -17,7 +22,9 @@
 </template>
 
 <script setup>
-import { onMounted, defineProps } from "vue";
+import { onMounted, defineProps, toRefs } from "vue";
+import store from "../store/index";
+let { theme } = toRefs(store);
 const props = defineProps({
   redNum: {
     type: Boolean,
@@ -84,12 +91,33 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.my-comment {
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background 0.3s ease,
+    transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+    -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+.my-comment:hover {
+  transform: translateY(-5px);
+}
 #vcomments {
   margin-top: 20px;
+}
+.redNum {
+  text-align: right;
 }
 .leancloud-visitors-count {
   color: var(--c-brand);
 }
+.my-comment :deep(.vnick) {
+  color: var(--c-brand);
+}
+#vcomments :deep(.vat),
+#vcomments :deep(a) {
+  color: var(--c-brand);
+}
 </style>
-
-m.cdn+a(e.get("mail"))+m.params

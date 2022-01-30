@@ -55,7 +55,7 @@ lastUpdated: true
           href="https://fuyouplus.cn/imgs/tx.jpg"
           target="_blank"
           style="color: var(--c-brand)"
-          >https://fuyouplus.cn/imgs/tx.jpg</a
+          >获取头像</a
         >
       </div>
     </div>

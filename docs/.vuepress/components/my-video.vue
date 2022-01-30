@@ -29,6 +29,7 @@ let { indexBg, src } = toRefs(props);
 
 <style>
 .player {
+  width: 100% !important;
   border-radius: 4px;
 }
 .plyr {

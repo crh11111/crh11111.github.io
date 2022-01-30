@@ -112,4 +112,9 @@ onMounted(() => {
 .back-to-top {
   background-image: linear-gradient(to bottom left, #3af3a0, #9b3df3);
 }
+@media (max-width: 959px) {
+  .back-to-top {
+    display: block !important;
+  }
+}
 </style>

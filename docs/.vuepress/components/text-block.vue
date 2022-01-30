@@ -1,5 +1,5 @@
 <template>
-  <div class="text-block">
+  <div class="text-block" :class="'text-block-' + theme">
     <div
       class="text-block-header"
       :style="
@@ -33,9 +33,16 @@ let { color, title } = toRefs(props);
 </script>
 
 <style scoped>
+.text-block-light {
+  background: rgba(255, 255, 255, 0.7);
+  color: #333333;
+}
+.text-block-dark {
+  background: rgba(45, 49, 56, 0.8);
+  color: #dfdbdb !important;
+}
 .text-block {
   position: relative;
-  background: rgba(255, 255, 255, 0.7);
   width: 100%;
   margin-top: 50px;
   margin-bottom: 16px;
@@ -66,6 +73,7 @@ let { color, title } = toRefs(props);
   position: absolute;
   top: -30px;
   left: 0;
+  transition: all 0.3s ease;
 }
 .circle {
   width: 12px;
