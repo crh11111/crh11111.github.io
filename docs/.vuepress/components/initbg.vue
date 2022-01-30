@@ -5,7 +5,7 @@ import store from "../store/index";
 onMounted(() => {
   const toggle_dark_button = document.querySelector(".toggle-dark-button");
   const html = document.querySelector("html");
-  const page = document.querySelector(".page");
+  const app = document.querySelector("#app");
   const hours = new Date().getHours();
   const getRandom = (start, end) => {
     //获得指定区间的随机数
@@ -17,7 +17,7 @@ onMounted(() => {
     theme.value = html.className.includes("dark") ? "dark" : "light";
     if (html.className.includes("dark")) {
       //深色模式
-      page.style.cssText = `
+      app.style.cssText = `
      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==);
      background-repeat: repeat;
      background-attachment: fixed;
@@ -26,7 +26,7 @@ onMounted(() => {
     } else {
       //浅色模式
       const randomNum = getRandom(1, 4);
-      page.style.cssText = `
+      app.style.cssText = `
        background: url(/imgs/bodyBG${randomNum}.png);
        background-repeat: repeat;
        background-attachment: fixed;

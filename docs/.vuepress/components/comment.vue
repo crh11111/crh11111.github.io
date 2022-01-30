@@ -92,6 +92,7 @@ onMounted(() => {
 
 <style scoped>
 .my-comment {
+  position: relative;
   border-radius: 7px;
   box-sizing: border-box;
   padding: 20px;
@@ -100,6 +101,7 @@ onMounted(() => {
   transition: background 0.3s ease,
     transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
     -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  z-index: 1;
 }
 .my-comment:hover {
   transform: translateY(-5px);

@@ -82,7 +82,7 @@ module.exports = [
     ],
   },
   {
-    text: "Github",
-    link: "https://github.com/2383155523/2383155523.github.io",
+    text: "🚇开往",
+    link: "https://travellings.link",
   },
 ];

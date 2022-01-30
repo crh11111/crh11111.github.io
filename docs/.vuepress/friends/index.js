@@ -34,6 +34,13 @@ const friends = [
     avatar: "https://xll.cc/wj/photo/tx.jpg",
     blog_img: "https://s3.bmp.ovh/imgs/2022/01/e6f22bb295e12a22.png",
   },
+  {
+    name: "卑微小H",
+    motto: "学习、记事",
+    url: "https://songhengsh.github.io/",
+    avatar: "https://songhengsh.github.io/tx.jpg",
+    blog_img: "https://s3.bmp.ovh/imgs/2022/01/fae60e61bc27932c.png",
+  },
 ];
 
 export default friends;
