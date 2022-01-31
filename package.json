@@ -15,7 +15,5 @@
     "@vuepress/plugin-search": "^2.0.0-beta.33",
     "vuepress": "^2.0.0-beta.33"
   },
-  "dependencies": {
-    "timeago.js": "^4.0.2"
-  }
+  "dependencies": {}
 }

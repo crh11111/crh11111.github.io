@@ -2,6 +2,7 @@
 sidebar: false
 lastUpdated: true
 ---
+
 # <my-title textColor_h="rgb(241, 148, 131)" lineColor="rgb(241, 148, 131)">建站背景</my-title>
 
 <text-block color="rgb(241, 148, 131)" title="MyBlog">
@@ -66,5 +67,5 @@ Github Action自动部署：<my-text color="rgb(85, 138, 238)" weight="bold">Tru
 </text-block>
 
 <ClientOnly>
-<comment :redNum="false"/>
+<comment />
 </ClientOnly>

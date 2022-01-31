@@ -38,5 +38,5 @@ lastUpdated: true
 <music-init/>
 
 <ClientOnly>
-<comment :redNum="false"/>
+<comment/>
 </ClientOnly>

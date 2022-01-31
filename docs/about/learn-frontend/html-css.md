@@ -1,4 +1,6 @@
-# <my-text color="#49eb6c" weight="bold">锻翼篇</my-text>
+<header-img title="锻翼篇" date="2022-01-21"/>
+
+# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)" display="none">锻翼篇</my-title>
 
 <p style="text-indent:1em;font-size:18px;">
  由于是自学的缘由，我的起步之路异常艰难，因为需要不停的搜寻学习资料，
