@@ -7,8 +7,9 @@
         <div class="info">
           <span
             ><i class="calendar" :class="'calendar-' + theme"></i
-            >{{ format(date, "zh_CN").replace(" ", "") }}</span
+            >{{ time }}</span
           >
+
           <span
             ><i class="fire" :class="'fire-' + theme"></i>热度{{
               hotNum
@@ -23,17 +24,27 @@
 
 <script setup>
 import { toRefs, defineProps, onMounted, ref } from "vue";
-import { format } from "timeago.js";
 import store from "../store/index";
 let { theme } = toRefs(store);
-let classify = ref("");
-let hotNum = ref("");
+const classify = ref("");
+const hotNum = ref("");
+const time = ref("");
 const props = defineProps({
   title: String,
   date: String,
 });
 let { date, title } = toRefs(props);
 onMounted(() => {
+  const head = document.querySelector("head");
+  const scriptEl = document.createElement("script");
+  scriptEl.src = "/time-ago/index.js";
+  head.appendChild(scriptEl);
+  const init = () => {
+    let { format } = timeago;
+    time.value = format(date.value, "zh_CN").replace(" ", "");
+  };
+  scriptEl.onload = init;
+
   const timer2 = setInterval(() => {
     try {
       const classifyEl = document.querySelector(".sidebar-item");
