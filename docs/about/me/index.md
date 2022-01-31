@@ -3,10 +3,6 @@ sidebar: false
 lastUpdated: true
 ---
 
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 <p style="font-size:100px;"></p>
 <text-block title="AboutMe" color="rgb(85, 138, 238)">
 <p style="text-indent:1em;font-size:16px;">

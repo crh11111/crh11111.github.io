@@ -2,11 +2,6 @@
 sidebar: false
 lastUpdated: true
 ---
-
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(241, 148, 131)" lineColor="rgb(241, 148, 131)">建站背景</my-title>
 
 <text-block color="rgb(241, 148, 131)" title="MyBlog">

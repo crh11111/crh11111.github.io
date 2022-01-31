@@ -24,8 +24,9 @@
           ></path>
         </svg>
       </a>
+      <initbg />
     </template>
-    <initbg />
+    <template #page-bottom> </template>
   </Layout>
 </template>
 
@@ -35,46 +36,26 @@ import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 import store from "../store/index";
 let { theme } = toRefs(store);
 onMounted(() => {
-  const toggle_dark_button = document.querySelector(".toggle-dark-button");
-  const html = document.querySelector("html");
-  const app = document.querySelector("#app");
-  const hours = new Date().getHours();
-  const getRandom = (start, end) => {
-    //获得指定区间的随机数
-    return Math.floor(start + (end - start) * Math.random());
-  };
-
-  const initTheme = () => {
-    theme.value = html.className.includes("dark") ? "dark" : "light";
-    if (html.className.includes("dark")) {
-      //深色模式
-      app.style.cssText = `
-     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==);
-     background-repeat: repeat;
-     background-attachment: fixed;
-     min-height: 100vh;
-      `;
-    } else {
-      //浅色模式
-      const randomNum = getRandom(1, 4);
-      app.style.cssText = `
-       background: url(/imgs/bodyBG${randomNum}.png);
-       background-repeat: repeat;
-       background-attachment: fixed;
-       min-height: 100vh;
-      `;
-    }
-  };
-  initTheme();
-  toggle_dark_button.addEventListener("click", () => {
-    initTheme();
-  });
-  if ((hours >= 18 || hours <= 5) && !html.className.includes("dark")) {
-    toggle_dark_button.click();
-    setTimeout(() => {
-      initTheme();
-    }, 0);
-  }
+  const footer = document.querySelector(".footer");
+  footer.innerHTML += `
+     <span id="cnzz_stat_icon_1280820610"
+          ><a
+            href="https://www.cnzz.com/stat/website.php?web_id=1280820610"
+            target="_blank"
+            >站长统计</a
+          >-<a
+            href="https://www.cnzz.com/stat/website.php?web_id=1280820610&amp;method=online"
+            target="_blank"
+            >当前在线[]</a
+          ></span
+        >
+  `;
+  const s1 = document.createElement("script");
+  const s2 = document.createElement("script");
+  s1.src = "https://v1.cnzz.com/z_stat.php?id=1280820610&online=2";
+  s2.src = "https://c.cnzz.com/core.php?web_id=1280820610&online=2&t=z";
+  document.body.appendChild(s1);
+  document.body.appendChild(s2);
 });
 </script>
 

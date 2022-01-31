@@ -43,6 +43,17 @@ import friends from "../friends/index";
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
 }
+@media (max-width: 513px) {
+  .friends-list .item {
+    width: 194px;
+    height: 120px;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .friends-list {
+    text-align: center;
+  }
+}
 .friends-list .item:hover .item-blog-img {
   transform: scale(1.15);
 }

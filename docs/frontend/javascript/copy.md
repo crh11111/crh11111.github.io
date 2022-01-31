@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(85, 138, 238)" lineColor="rgb(85, 138, 238)">一键复制内容</my-title>
 
 ## <my-text weight="bold" color="rgb(85, 138, 238)">思路</my-text>

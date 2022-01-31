@@ -38,12 +38,6 @@ onMounted(() => {
   toggle_dark_button.addEventListener("click", () => {
     initTheme();
   });
-  if ((hours >= 18 || hours <= 5) && !html.className.includes("dark")) {
-    toggle_dark_button.click();
-    setTimeout(() => {
-      initTheme();
-    }, 0);
-  }
 });
 </script>
 <style>

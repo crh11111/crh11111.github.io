@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)">CSS 实现写轮眼动画</my-title>
 
 ## 效果如下

@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)">调用系统 Notification 通知功能</my-title>
 
 <tips>

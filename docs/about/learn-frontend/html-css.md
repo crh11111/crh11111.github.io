@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-text color="#49eb6c" weight="bold">锻翼篇</my-text>
 
 <p style="text-indent:1em;font-size:18px;">

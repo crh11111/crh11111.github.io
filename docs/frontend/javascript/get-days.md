@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(76, 175, 80)" lineColor="rgb(76, 175, 80)">获取当前星期星期一的年月日</my-title>
 
 ## 思路

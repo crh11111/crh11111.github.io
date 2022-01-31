@@ -28,15 +28,12 @@ onMounted(() => {
   const scriptEl = document.createElement("script");
   scriptEl.src = "https://cdn.jsdelivr.net/npm/dplayer@1.26.0";
   head.appendChild(scriptEl);
-  const timer = setInterval(() => {
-    try {
-      if (DPlayer) {
-        clearInterval(timer);
-        alert("准备就绪");
-      }
-    } catch (error) {}
-  }, 500);
+  const init = () => {
+    alert("准备就绪");
+  };
+  scriptEl.onload = init;
 });
+
 </script>
 <style scoped>
 #dplayer {

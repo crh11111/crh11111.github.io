@@ -3,10 +3,6 @@ sidebar: false
 lastUpdated: true
 ---
 
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 <tips>
 <template v-slot:title>
 小蝣说：

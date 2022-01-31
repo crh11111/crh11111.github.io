@@ -8,11 +8,6 @@ next:
   text: 归档
   link: /timeline
 ---
-
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title>前言</my-title>
 
 ## <my-title textColor_h="#1de7cc" lineColor="#1de7cc">为什么想写一个自己的博客？</my-title>

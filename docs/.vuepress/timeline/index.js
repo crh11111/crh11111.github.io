@@ -78,11 +78,6 @@ const timeLine = [
   },
   {
     type: "acticle",
-    title: "新增功能-晚上6点-早上5点自动进入深色模式",
-    date: "01-23",
-  },
-  {
-    type: "acticle",
     title: "新增友链模块",
     date: "01-23",
   },

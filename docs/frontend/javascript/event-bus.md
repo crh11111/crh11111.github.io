@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)">高仿 vue2 EventBus API</my-title>
 
 ## <my-title textColor_h="#ff0062" lineColor="#ff0062">起因</my-title>

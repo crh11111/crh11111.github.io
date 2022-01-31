@@ -1,7 +1,3 @@
-<ClientOnly>
-<initbg/>
-</ClientOnly>
-
 # <my-title textColor_h="rgb(224, 64, 251)" lineColor="rgb(224, 64, 251)">解决 uni-file-picker 组件在 ios 点击失效的问题</my-title>
 
 ```js:no-line-numbers
