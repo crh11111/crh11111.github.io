@@ -1,23 +1,25 @@
 <template>
-  <div class="text-block" :class="'text-block-' + theme">
-    <div
-      class="text-block-header"
-      :style="
-        theme == 'light'
-          ? 'background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3);'
-          : 'background: rgba(27, 30, 43, 0.9);'
-      "
-    >
-      <div class="circle one"></div>
-      <div class="circle two"></div>
-      <div class="circle three"></div>
-    </div>
+  <ClientOnly>
+    <div class="text-block" :class="'text-block-' + theme">
+      <div
+        class="text-block-header"
+        :style="
+          theme == 'light'
+            ? 'background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3);'
+            : 'background: rgba(27, 30, 43, 0.9);'
+        "
+      >
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+      </div>
 
-    <div class="title">
-      <span>{{ title }}</span>
+      <div class="title">
+        <span>{{ title }}</span>
+      </div>
+      <slot></slot>
     </div>
-    <slot></slot>
-  </div>
+  </ClientOnly>
 </template>
 
 <script setup>
@@ -39,7 +41,7 @@ let { color, title } = toRefs(props);
 }
 .text-block-dark {
   background: rgba(45, 49, 56, 0.8);
-  color: #dfdbdb !important;
+  color: #dfdbdb;
 }
 .text-block {
   position: relative;
@@ -53,7 +55,6 @@ let { color, title } = toRefs(props);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 14px 38px rgb(0 0 0 / 8%), 0 3px 8px rgb(0 0 0 / 6%);
   font-size: 16px;
-  color: #333333;
   transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
     -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
 }
