@@ -81,8 +81,4 @@ module.exports = [
       },
     ],
   },
-  {
-    text: "🚇开往",
-    link: "https://travellings.link",
-  },
 ];

@@ -1,4 +1,6 @@
-# <my-title textColor_h="rgb(224, 64, 251)" lineColor="rgb(224, 64, 251)">解决 uni-file-picker 组件在 ios 点击失效的问题</my-title>
+<header-img title="uni-file-picker组件在ios点击失效" date="2022-01-23"/>
+
+# <my-title textColor_h="rgb(224, 64, 251)" lineColor="rgb(224, 64, 251)" display="none">uni-file-picker 组件在 ios 点击失效</my-title>
 
 ```js:no-line-numbers
 //从组件源码里找到 choose-and-upload-file.js 文件

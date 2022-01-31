@@ -1,4 +1,6 @@
-# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)">高仿 vue2 EventBus API</my-title>
+<header-img title="高仿 vue2 EventBus API" date="2022-01-21"/>
+
+# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)" display="none">高仿 vue2 EventBus API</my-title>
 
 ## <my-title textColor_h="#ff0062" lineColor="#ff0062">起因</my-title>
 
@@ -134,7 +136,7 @@ Bus.$on('num',(val)=>{
 可以看到，API的使用与之前一致,此方法并不与某一个框架强绑定，可以自由使用在任意项目环境中,全文系博主原创，转载请标明出处!
 </tips>
 <ClientOnly>
-<comment/>
+<comment />
 </ClientOnly>
 
 <my-code/>

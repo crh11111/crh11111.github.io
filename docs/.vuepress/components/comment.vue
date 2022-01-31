@@ -6,7 +6,7 @@
         theme == 'dark' ? 'rgba(45, 49, 56, 0.8)' : 'rgba(255, 255, 255, 0.8)',
     }"
   >
-    <div v-if="redNum" class="redNum">
+    <div v-show="redNum" class="redNum">
       <span
         :id="pathName"
         class="leancloud_visitors"
@@ -28,7 +28,7 @@ let { theme } = toRefs(store);
 const props = defineProps({
   redNum: {
     type: Boolean,
-    default: true,
+    default: false,
   },
 });
 const pathName = window.location.pathname;
@@ -103,6 +103,9 @@ onMounted(() => {
 }
 #vcomments {
   margin-top: 20px;
+  /* background: url(https://w.wallhaven.cc/full/dp/wallhaven-dp299g.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
 }
 .redNum {
   text-align: right;

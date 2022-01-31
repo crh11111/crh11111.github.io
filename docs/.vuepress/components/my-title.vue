@@ -1,5 +1,5 @@
 <template>
-  <div class="my-title" :style="{ color: textColor }">
+  <div class="my-title" :style="{ color: textColor, display: display }">
     <slot></slot>
     <div class="line" :style="{ backgroundColor: lineColor }"></div>
   </div>
@@ -11,6 +11,7 @@ interface props {
   textColor?: string;
   textColor_h?: string;
   lineColor?: string;
+  display?: string;
 }
 const props: props = defineProps({
   textColor: String,
@@ -22,9 +23,13 @@ const props: props = defineProps({
     type: String,
     default: "#851ce7",
   },
+  display: {
+    type: String,
+    default: "inline-block",
+  },
 });
 
-let { lineColor, textColor_h, textColor } = toRefs(props);
+let { lineColor, textColor_h, textColor, display } = toRefs(props);
 </script>
 <style scoped>
 .my-title {

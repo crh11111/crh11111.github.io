@@ -35,28 +35,7 @@ import { toRefs, onMounted } from "vue";
 import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 import store from "../store/index";
 let { theme } = toRefs(store);
-onMounted(() => {
-  const footer = document.querySelector(".footer");
-  footer.innerHTML += `
-     <span id="cnzz_stat_icon_1280820610"
-          ><a
-            href="https://www.cnzz.com/stat/website.php?web_id=1280820610"
-            target="_blank"
-            >站长统计</a
-          >-<a
-            href="https://www.cnzz.com/stat/website.php?web_id=1280820610&amp;method=online"
-            target="_blank"
-            >当前在线[]</a
-          ></span
-        >
-  `;
-  const s1 = document.createElement("script");
-  const s2 = document.createElement("script");
-  s1.src = "https://v1.cnzz.com/z_stat.php?id=1280820610&online=2";
-  s2.src = "https://c.cnzz.com/core.php?web_id=1280820610&online=2&t=z";
-  document.body.appendChild(s1);
-  document.body.appendChild(s2);
-});
+
 </script>
 
 <style scoped>
@@ -64,7 +43,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   margin: -2px -0.8rem 0 1rem;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 10px;
 }
 </style>

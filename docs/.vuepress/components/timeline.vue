@@ -32,8 +32,10 @@ import timeline from "../timeline/index";
   src: url("../public/font/FiraCode-Medium.ttf");
 }
 .timeline {
+  width: 70%;
   position: relative;
   font-family: "fira-code";
+  margin: 0 auto;
   margin-top: 40px;
 }
 .timeline::before {

@@ -35,8 +35,8 @@ module.exports = {
   ],
   "/frontend/javascript/": [
     {
-      text: "javascript",
-      title: "javascript",
+      text: "JavaScript",
+      title: "JavaScript",
       collapsable: false,
       sidebarDepth: 1,
       children: ["event-bus.md", "get-days.md", "notification.md", "copy.md"],
@@ -44,8 +44,8 @@ module.exports = {
   ],
   "/frontend/css/": [
     {
-      text: "css",
-      title: "css",
+      text: "Css",
+      title: "Css",
       collapsable: false,
       sidebarDepth: 1,
       children: ["xielunyan.md"],
@@ -53,8 +53,8 @@ module.exports = {
   ],
   "/frontend/uniapp/": [
     {
-      text: "uniapp",
-      title: "uniapp",
+      text: "Uniapp",
+      title: "Uniapp",
       collapsable: false,
       sidebarDepth: 1,
       children: ["uni-file-picker.md"],
@@ -62,8 +62,8 @@ module.exports = {
   ],
   "/frontend/jquery/": [
     {
-      text: "jquery",
-      title: "jquery",
+      text: "Jquery",
+      title: "Jquery",
       collapsable: false,
       sidebarDepth: 1,
       children: [],

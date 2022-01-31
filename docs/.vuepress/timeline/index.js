@@ -1,14 +1,14 @@
 const timeLine = [
   {
     type: "acticle",
-    title: "逢年",
+    title: "新增博文头图组件",
     date: "01-31",
-    link: "/life/note/2022-1-31",
   },
   {
     type: "acticle",
-    title: "新增开往(友链接力)功能",
-    date: "01-30",
+    title: "逢年",
+    date: "01-31",
+    link: "/life/note/2022-1-31",
   },
   {
     type: "acticle",
@@ -83,7 +83,7 @@ const timeLine = [
   },
   {
     type: "acticle",
-    title: "解决 uni-file-picker 组件在 ios 点击失效的问题",
+    title: "uni-file-picker组件在ios点击失效",
     date: "01-23",
     link: "/frontend/uniapp/uni-file-picker",
   },

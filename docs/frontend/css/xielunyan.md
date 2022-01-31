@@ -1,4 +1,6 @@
-# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)">CSS 实现写轮眼动画</my-title>
+<header-img title="CSS实现写轮眼动画" date="2022-01-25"/>
+
+# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)" display="none">CSS 实现写轮眼动画</my-title>
 
 ## 效果如下
 

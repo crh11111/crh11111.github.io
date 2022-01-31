@@ -27,8 +27,9 @@ onMounted(() => {
       //浅色模式
       const randomNum = getRandom(1, 4);
       app.style.cssText = `
-       background: url(/imgs/bodyBG${randomNum}.png);
+       background: url(/imgs/bg${randomNum}.${randomNum > 3 ? "jpg" : "png"});
        background-repeat: repeat;
+       ${randomNum > 3 ? "background-size:cover;" : ""}
        background-attachment: fixed;
        min-height: 100vh;
       `;
@@ -101,7 +102,8 @@ onMounted(() => {
   height: 6px;
 }
 .theme-default-content {
-  max-width: 900px !important;
+  max-width: 876px !important;
+  padding: 0 !important;
 }
 .back-to-top {
   background-image: linear-gradient(to bottom left, #3af3a0, #9b3df3);
@@ -109,6 +111,10 @@ onMounted(() => {
 @media (max-width: 959px) {
   .back-to-top {
     display: block !important;
+  }
+}
+@media (max-width: 718px) {
+  .theme-default-content {
   }
 }
 </style>
