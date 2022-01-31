@@ -4,8 +4,13 @@ import { onMounted, onUnmounted, toRefs } from "vue";
 import store from "../store/index";
 let { videoIsShow } = toRefs(store);
 
+const PlyrInstansArr = [];
+
 onUnmounted(() => {
   videoIsShow.value = false;
+  PlyrInstansArr.forEach((plyr) => {
+    plyr.destroy();
+  });
 });
 onMounted(() => {
   const head = document.querySelector("head");
@@ -21,9 +26,9 @@ onMounted(() => {
     try {
       if (Plyr) {
         clearInterval(timer);
-        Array.from(document.querySelectorAll(".player")).map(
-          (p) => new Plyr(p)
-        );
+        Array.from(document.querySelectorAll(".player")).map((p) => {
+          PlyrInstansArr.push(new Plyr(p));
+        });
         videoIsShow.value = true;
       }
     } catch (error) {}

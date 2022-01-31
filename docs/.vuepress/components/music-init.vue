@@ -1,8 +1,10 @@
 <template></template>
 <script setup>
-import { onMounted, toRefs } from "vue";
+import { onMounted, toRefs, onUnmounted } from "vue";
 import store from "../store/index";
 let { musicIds } = toRefs(store);
+
+let aplayerInstansArr = [];
 
 onMounted(() => {
   const head = document.querySelector("head");
@@ -27,25 +29,34 @@ onMounted(() => {
             .then((res) => res.json())
             .then((data) => {
               let song = data[0];
-              new APlayer({
-                container: aplayers[i],
-                theme: "#9f46f3",
-                loop: "loop",
-                lrcType: 3,
-                audio: [
-                  {
-                    name: song.title,
-                    artist: song.author,
-                    url: song.url,
-                    cover: song.pic,
-                    lrc: song.lrc,
-                  },
-                ],
-              });
+              aplayerInstansArr.push(
+                new APlayer({
+                  container: aplayers[i],
+                  theme: "#9f46f3",
+                  loop: "loop",
+                  lrcType: 3,
+                  audio: [
+                    {
+                      name: song.title,
+                      artist: song.author,
+                      url: song.url,
+                      cover: song.pic,
+                      lrc: song.lrc,
+                    },
+                  ],
+                })
+              );
             });
         }
       }
     } catch (error) {}
   }, 500);
+});
+onUnmounted(() => {
+  // console.log(aplayerInstansArr);
+  musicIds.value.length = 0;
+  aplayerInstansArr.forEach((ap) => {
+    ap.destroy();
+  });
 });
 </script>
