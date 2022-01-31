@@ -22,12 +22,16 @@ onMounted(() => {
   head.appendChild(link);
   head.appendChild(scriptEl);
 
-  const init = () => {
-    Array.from(document.querySelectorAll(".player")).map((p) => {
-      PlyrInstansArr.push(new Plyr(p));
-    });
-    videoIsShow.value = true;
-  };
-  scriptEl.onload = init;
+  const timer = setInterval(() => {
+    try {
+      if (Plyr) {
+        clearInterval(timer);
+        Array.from(document.querySelectorAll(".player")).map((p) => {
+          PlyrInstansArr.push(new Plyr(p));
+        });
+        videoIsShow.value = true;
+      }
+    } catch (error) {}
+  }, 500);
 });
 </script>

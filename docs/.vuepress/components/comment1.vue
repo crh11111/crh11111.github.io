@@ -36,19 +36,26 @@ onMounted(() => {
   const head = document.querySelector("head");
   const scriptEl = document.createElement("script");
   scriptEl.src = "/Valine/Valine.js";
+
+  
   head.appendChild(scriptEl);
-  const init = () => {
-    new Valine({
-      el: "#vcomments",
-      appId: "2uDda4eFqUHLJzN4jfrSPur8-gzGzoHsz",
-      appKey: "SboyOjdkRRAkjvU3TKUNYCrr",
-      avatar: "monsterid",
-      visitor: true,
-      placeholder: "各位看官写点什么吧！",
-      path: pathName,
-    });
-  };
-  scriptEl.onload = init;
+
+  const timer = setInterval(() => {
+    try {
+      if (Valine) {
+        clearInterval(timer);
+        new Valine({
+          el: "#vcomments",
+          appId: "2uDda4eFqUHLJzN4jfrSPur8-gzGzoHsz",
+          appKey: "SboyOjdkRRAkjvU3TKUNYCrr",
+          avatar: "monsterid",
+          visitor: true,
+          placeholder: "各位看官写点什么吧！",
+          path: pathName,
+        });
+      }
+    } catch (error) {}
+  }, 500);
 
   const timer2 = setInterval(() => {
     try {
