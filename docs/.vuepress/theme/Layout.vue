@@ -35,7 +35,6 @@ import { toRefs, onMounted } from "vue";
 import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 import store from "../store/index";
 let { theme } = toRefs(store);
-
 </script>
 
 <style scoped>
@@ -45,5 +44,10 @@ let { theme } = toRefs(store);
   margin: -2px -0.8rem 0 1rem;
   padding-left: 10px;
   padding-right: 10px;
+}
+@media (max-width: 718px) {
+  .icon-button {
+    display: none;
+  }
 }
 </style>

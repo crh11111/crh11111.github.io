@@ -122,4 +122,16 @@ code {
     height: 10px;
   }
 }
+@media screen and (max-width: 419px) {
+  .theme-default-content div[class*="language-"] {
+    margin: 60px 0 !important;
+    border-radius: 0;
+  }
+}
+@media (max-width: 718px) {
+  .theme-default-content div[class*="language-"] {
+    width: 95%;
+    margin: 60px auto !important;
+  }
+}
 </style>

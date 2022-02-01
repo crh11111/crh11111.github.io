@@ -91,6 +91,7 @@ let { type } = toRefs(props);
 .t-primary-text {
   color: var(--t-primary);
 }
+
 .tips {
   width: 100%;
   margin: 50px auto;
@@ -103,6 +104,11 @@ let { type } = toRefs(props);
   border-bottom-right-radius: 4px;
   transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
     -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+@media (max-width: 718px) {
+  .tips {
+    width: 95%;
+  }
 }
 .tips:hover {
   transform: translateY(-5px);

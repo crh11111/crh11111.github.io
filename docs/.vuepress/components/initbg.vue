@@ -103,7 +103,7 @@ onMounted(() => {
 }
 .theme-default-content {
   max-width: 876px !important;
-  padding: 0 !important;
+  /* padding: 0 !important; */
 }
 .back-to-top {
   background-image: linear-gradient(to bottom left, #3af3a0, #9b3df3);
@@ -115,6 +115,28 @@ onMounted(() => {
 }
 @media (max-width: 718px) {
   .theme-default-content {
+    padding: 0 !important;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    width: 95%;
   }
 }
 </style>

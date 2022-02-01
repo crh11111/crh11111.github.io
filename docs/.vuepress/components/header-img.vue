@@ -1,7 +1,7 @@
 <template>
   <ClientOnly>
     <a class="img-box">
-      <img src="https://apis.jxcxin.cn/api/dmimg" alt="" class="header-img" />
+      <img :src="imgUrl" alt="" class="header-img" />
       <div class="mc" :class="'mc-' + theme">
         <div class="title">{{ title }}</div>
         <div class="info">
@@ -23,18 +23,23 @@
 </template>
 
 <script setup>
-import { toRefs, defineProps, onMounted, ref } from "vue";
+import { toRefs, defineProps, onMounted, ref, onUnmounted } from "vue";
 import store from "../store/index";
 let { theme } = toRefs(store);
 const classify = ref("");
 const hotNum = ref("");
 const time = ref("");
+const imgUrl = ref("");
 const props = defineProps({
   title: String,
   date: String,
 });
 let { date, title } = toRefs(props);
+onUnmounted(() => {
+  imgUrl.value = "";
+});
 onMounted(() => {
+  imgUrl.value = "https://apis.jxcxin.cn/api/dmimg";
   const head = document.querySelector("head");
   const scriptEl = document.createElement("script");
   scriptEl.src = "/time-ago/index.js";

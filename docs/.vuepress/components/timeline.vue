@@ -75,6 +75,11 @@ import timeline from "../timeline/index";
   margin: 60px 0;
   position: relative;
 }
+@media (max-width: 718px) {
+  .timeline .year h2 {
+    text-align: left;
+  }
+}
 .timeline .year::before {
   background: var(--c-brand);
   box-shadow: 0 0 1px 1px #bdbdbd;

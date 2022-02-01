@@ -58,6 +58,15 @@ let { color, title } = toRefs(props);
   transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
     -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
 }
+@media (max-width: 718px) {
+  .text-block {
+    width: 95%;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .text-block:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 38px rgb(0 0 0 / 14%), 0 3px 8px rgb(0 0 0 / 12%);
