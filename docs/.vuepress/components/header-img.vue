@@ -1,20 +1,7 @@
 <template>
   <ClientOnly>
     <a class="img-box">
-      <img
-        :src="src"
-        alt=""
-        class="header-img"
-        id="headImg"
-        v-show="imgIsReady"
-      />
-      <img
-        src="../public/imgs/wait.png"
-        alt=""
-        class="header-img"
-        id="img-default"
-        v-show="!imgIsReady"
-      />
+      <img :src="src" alt="" class="header-img" />
       <div class="mc" :class="'mc-' + theme">
         <div class="title">{{ title }}</div>
         <div class="info">
@@ -42,7 +29,6 @@ let { theme } = toRefs(store);
 const classify = ref("");
 const hotNum = ref("");
 const time = ref("");
-const imgIsReady = ref(false);
 const props = defineProps({
   title: String,
   date: String,
@@ -51,18 +37,6 @@ const props = defineProps({
 let { date, title, src } = toRefs(props);
 
 onMounted(() => {
-  const timer3 = setInterval(() => {
-    try {
-      const headImg = document.getElementById("headImg");
-      if (headImg) {
-        clearInterval(timer3);
-        headImg.onload = () => {
-          imgIsReady.value = true;
-        };
-      }
-    } catch (error) {}
-  });
-
   const head = document.querySelector("head");
   const scriptEl = document.createElement("script");
   scriptEl.src = "/time-ago/index.js";
