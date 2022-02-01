@@ -1,4 +1,4 @@
-<header-img title="CSS实现写轮眼动画" date="2022-01-25"/>
+<header-img title="CSS实现写轮眼动画" date="2022-01-25" src="https://w.wallhaven.cc/full/o3/wallhaven-o3wy89.jpg"/>
 
 # <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)" display="none">CSS 实现写轮眼动画</my-title>
 

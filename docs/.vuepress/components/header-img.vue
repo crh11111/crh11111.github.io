@@ -1,7 +1,20 @@
 <template>
   <ClientOnly>
     <a class="img-box">
-      <img :src="imgUrl" alt="" class="header-img" />
+      <img
+        :src="src"
+        alt=""
+        class="header-img"
+        id="headImg"
+        v-show="imgIsReady"
+      />
+      <img
+        src="../public/imgs/wait.png"
+        alt=""
+        class="header-img"
+        id="img-default"
+        v-show="!imgIsReady"
+      />
       <div class="mc" :class="'mc-' + theme">
         <div class="title">{{ title }}</div>
         <div class="info">
@@ -23,23 +36,33 @@
 </template>
 
 <script setup>
-import { toRefs, defineProps, onMounted, ref, onUnmounted } from "vue";
+import { toRefs, defineProps, onMounted, ref } from "vue";
 import store from "../store/index";
 let { theme } = toRefs(store);
 const classify = ref("");
 const hotNum = ref("");
 const time = ref("");
-const imgUrl = ref("");
+const imgIsReady = ref(false);
 const props = defineProps({
   title: String,
   date: String,
+  src: String,
 });
-let { date, title } = toRefs(props);
-onUnmounted(() => {
-  imgUrl.value = "";
-});
+let { date, title, src } = toRefs(props);
+
 onMounted(() => {
-  imgUrl.value = "https://apis.jxcxin.cn/api/dmimg";
+  const timer3 = setInterval(() => {
+    try {
+      const headImg = document.getElementById("headImg");
+      if (headImg) {
+        clearInterval(timer3);
+        headImg.onload = () => {
+          imgIsReady.value = true;
+        };
+      }
+    } catch (error) {}
+  });
+
   const head = document.querySelector("head");
   const scriptEl = document.createElement("script");
   scriptEl.src = "/time-ago/index.js";
