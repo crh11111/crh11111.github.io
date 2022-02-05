@@ -9,9 +9,10 @@ onMounted(() => {
     <div class="circle one"></div>
     <div class="circle two"></div>
     <div class="circle three"></div>
-    <div class="copy"></div>
+    <svg t="1644040761636" class="copy" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7993" ><path class="copy-p" d="M576 384a64 64 0 0 1 64 64v341.333333a64 64 0 0 1-64 64H234.666667a64 64 0 0 1-64-64V448a64 64 0 0 1 64-64h341.333333z m0 64H234.666667v341.333333h341.333333V448z m-64 192v64H298.666667v-64h213.333333zM789.333333 170.666667a64 64 0 0 1 64 64v341.333333a64 64 0 0 1-64 64h-106.666666v-64h106.666666V234.666667H448v106.666666h-64v-106.666666a64 64 0 0 1 64-64h341.333333zM512 533.333333v64H298.666667v-64h213.333333z" p-id="7994"></path></svg>
   </div>
  `;
+  //  <div class="copy"></div>
 
   Array.from(codes).forEach((item) => {
     item.parentElement.parentElement.style.cssText = `
@@ -26,15 +27,17 @@ onMounted(() => {
   const copys = document.querySelectorAll(".copy");
 
   const copyHandle = (e) => {
-    const copyContent =
-      e.target.parentElement.previousElementSibling.children[0].innerText;
-    const oInput = document.createElement("input");
-    oInput.value = copyContent;
-    document.body.appendChild(oInput);
-    oInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(oInput);
-    alert("复制成功");
+    if (e.target.nodeName == "svg") {
+      const copyContent =
+        e.target.parentElement.previousElementSibling.children[0].innerText;
+      const oInput = document.createElement("input");
+      oInput.value = copyContent;
+      document.body.appendChild(oInput);
+      oInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(oInput);
+      alert("复制成功");
+    }
   };
   copys.forEach((el) => {
     el.onclick = copyHandle;
@@ -71,22 +74,27 @@ onMounted(() => {
   background: #35cd4b;
 }
 .copy {
-  width: 20px;
+  display: block;
+  width: 24px;
   height: 80%;
   position: absolute;
   top: 2px;
   right: 10px;
-  background-image: url("../public/imgs/copy-gray.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
   cursor: pointer;
-  transition: all 0.3s ease 0s, transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+  transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
     -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+.copy-p {
+  fill: #dbdbdb;
+  transition: all 0.3s ease 0s;
 }
 
 .copy:hover {
-  background-image: url("../public/imgs/copy.svg");
   transform: translateY(-2px);
+}
+.copy:hover .copy-p {
+  fill: var(--c-brand);
 }
 @font-face {
   font-family: "fira-code";

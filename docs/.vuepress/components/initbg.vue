@@ -6,7 +6,8 @@ onMounted(() => {
   const toggle_dark_button = document.querySelector(".toggle-dark-button");
   const html = document.querySelector("html");
   const app = document.querySelector("#app");
-  const hours = new Date().getHours();
+
+
   const getRandom = (start, end) => {
     //获得指定区间的随机数
     return Math.floor(start + (end - start) * Math.random());
@@ -42,6 +43,9 @@ onMounted(() => {
 });
 </script>
 <style>
+.icon:first-child {
+  color: var(--c-brand);
+}
 #app .navbar,
 #app .sidebar {
   opacity: 0.8;
@@ -52,11 +56,6 @@ onMounted(() => {
   src: url("../public/font/FiraCode-Medium.ttf");
 }
 #app {
-  /* background: url(/imgs/bodyBG.png); */
-  /* background: url(/img);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover; */
   min-height: 100vh;
   font-family: "fira-code" !important;
   font-size: 16px !important;
@@ -83,8 +82,8 @@ onMounted(() => {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background-image: linear-gradient(to bottom left, #3af3a0, #9b3df3);
-  /* background-color: #3eaf7c;
+  /* background-image: linear-gradient(to bottom left, #3af3a0, var(--c-brand)); */
+  background-color: var(--c-brand);
   background-image: -webkit-linear-gradient(
     45deg,
     hsla(0, 0%, 100%, 0.6) 25%,
@@ -94,7 +93,7 @@ onMounted(() => {
     hsla(0, 0%, 100%, 0.6) 75%,
     transparent 0,
     transparent
-  ); */
+  );
 }
 
 *::-webkit-scrollbar {
@@ -106,7 +105,7 @@ onMounted(() => {
   /* padding: 0 !important; */
 }
 .back-to-top {
-  background-image: linear-gradient(to bottom left, #3af3a0, #9b3df3);
+  background: var(--c-brand);
 }
 @media (max-width: 959px) {
   .back-to-top {

@@ -1,6 +1,6 @@
 <header-img title="高仿 vue2 EventBus API" date="2022-01-21" src="https://w.wallhaven.cc/full/rd/wallhaven-rdwjj7.jpg"/>
 
-# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)" display="none">高仿 vue2 EventBus API</my-title>
+# <my-title textColor_h="rgb(51, 149, 159)" lineColor="rgb(51, 149, 159)" display="none">高仿vue2EventBusAPI</my-title>
 
 ## <my-title textColor_h="#ff0062" lineColor="#ff0062">起因</my-title>
 

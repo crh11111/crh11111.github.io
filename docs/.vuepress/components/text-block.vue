@@ -5,7 +5,7 @@
         class="text-block-header"
         :style="
           theme == 'light'
-            ? 'background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3);'
+            ? 'background-image: var(--linear-gradient);'
             : 'background: rgba(27, 30, 43, 0.9);'
         "
       >
@@ -76,8 +76,6 @@ let { color, title } = toRefs(props);
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* background: rgba(27, 30, 43, 0.9); */
-  /* background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3); */
   border-radius: 4px 4px 0 0;
   height: 30px;
   position: absolute;

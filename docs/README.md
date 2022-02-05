@@ -22,7 +22,7 @@ footer: MIT Licensed | Copyright © 2022-present 微若蜉蝣
      opacity: 0.8;
   }
    .home .hero img{
-       max-height: 269px !important;
+       max-height: 268px !important;
        border-radius:1rem; 
    }
 </style>

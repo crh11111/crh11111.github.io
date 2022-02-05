@@ -24,11 +24,14 @@ onMounted(() => {
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
+          const theme = getComputedStyle(
+            document.documentElement
+          ).getPropertyValue("--c-brand");
           let song = data[0];
           aplayerInstansArr.push(
             new APlayer({
               container: aplayers[i],
-              theme: "#9f46f3",
+              theme: theme,
               loop: "loop",
               lrcType: 3,
               audio: [

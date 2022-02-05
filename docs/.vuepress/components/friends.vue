@@ -11,8 +11,26 @@
         <img :src="item.blog_img" alt="" class="item-blog-img" />
         <div class="item-mc">
           <img :src="item.avatar" class="item-mc-avatar" />
-          <div class="item-mc-top"></div>
-          <div class="item-mc-bottom">{{ item.name }}</div>
+          <div
+            class="item-mc-top"
+            :style="{
+              background:
+                theme == 'dark'
+                  ? 'rgba(0, 0, 0, 0.6)'
+                  : 'rgba(255, 255, 255, 0.6)',
+            }"
+          ></div>
+          <div
+            class="item-mc-bottom"
+            :style="{
+              background:
+                theme == 'dark'
+                  ? 'rgba(0, 0, 0, 0.9)'
+                  : 'rgba(255, 255, 255, 0.9)',
+            }"
+          >
+            {{ item.name }}
+          </div>
         </div>
       </a>
     </div>
@@ -20,7 +38,10 @@
 </template>
 
 <script setup>
+import { toRefs } from "vue";
 import friends from "../friends/index";
+import store from "../store/index";
+let { theme } = toRefs(store);
 </script>
 
 <style scoped>
@@ -38,7 +59,7 @@ import friends from "../friends/index";
   height: 120px;
   border-radius: 4px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 19px;
   margin-top: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
@@ -88,12 +109,10 @@ import friends from "../friends/index";
 .friends-list .item .item-mc .item-mc-bottom {
   width: 100%;
   height: 50%;
+  transition: background 0.3s ease;
 }
-.friends-list .item .item-mc .item-mc-top {
-  background: rgba(255, 255, 255, 0.6);
-}
+
 .friends-list .item .item-mc .item-mc-bottom {
-  background: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   text-align: center;
   line-height: 75px;

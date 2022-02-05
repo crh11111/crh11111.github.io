@@ -81,7 +81,7 @@ import timeline from "../timeline/index";
   }
 }
 .timeline .year::before {
-  background: var(--c-brand);
+  background: #9b3df3;
   box-shadow: 0 0 1px 1px #bdbdbd;
   border: 1px solid #fff;
   border-radius: 50%;

@@ -1,8 +1,14 @@
 :root {
-  --c-brand: #9f46f3;
-  --c-brand-light: #c695f3;
+  --c-brand: #fa996f;
+  --c-brand-light: #e78d66;
+  --linear-gradient: linear-gradient(135deg, #fa996f 10%, #b3315f 100%);
+  // --c-brand: #9f46f3;
+  // --c-brand-light: #c695f3;
 }
 html.dark {
-  --c-brand: #9f46f3;
-  --c-brand-light: #c695f3;
+  --c-brand: #e78d66;
+  --c-brand-light: #d88460;
+  --linear-gradient: linear-gradient(135deg, #fa996f 10%, #b3315f 100%);
+  // --c-brand: #9f46f3;
+  // --c-brand-light: #c695f3;
 }

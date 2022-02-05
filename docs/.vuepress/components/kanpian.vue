@@ -33,7 +33,6 @@ onMounted(() => {
   };
   scriptEl.onload = init;
 });
-
 </script>
 <style scoped>
 #dplayer {
@@ -57,12 +56,17 @@ button {
   line-height: 50px;
   text-align: center;
   font-size: 18px;
-  background-image: linear-gradient(to bottom left, #4df0a6, #9f46f3);
+  background: var(--c-brand);
   border-radius: 15px;
   display: block;
   margin: 0 auto;
   border: none;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background 0.3s ease;
+  color: #fff;
+}
+button:hover {
+  background: var(--c-brand-light);
 }
 </style>
