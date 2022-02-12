@@ -39,7 +39,13 @@ module.exports = {
       title: "JavaScript",
       collapsable: false,
       sidebarDepth: 1,
-      children: ["event-bus.md", "get-days.md", "notification.md", "copy.md"],
+      children: [
+        "event-bus.md",
+        "get-days.md",
+        "notification.md",
+        "copy.md",
+        "check-is-mobile.md",
+      ],
     },
   ],
   "/frontend/css/": [

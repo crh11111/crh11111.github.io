@@ -1,6 +1,12 @@
 const timeLine = [
   {
     type: "acticle",
+    title: "判断当前网页环境是否为移动端",
+    date: "02-12",
+    link: "/frontend/javascript/check-is-mobile",
+  },
+  {
+    type: "acticle",
     title: "新增博文头图组件",
     date: "01-31",
   },

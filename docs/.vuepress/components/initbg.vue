@@ -7,7 +7,6 @@ onMounted(() => {
   const html = document.querySelector("html");
   const app = document.querySelector("#app");
 
-
   const getRandom = (start, end) => {
     //获得指定区间的随机数
     return Math.floor(start + (end - start) * Math.random());
