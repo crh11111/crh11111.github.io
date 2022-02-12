@@ -1,40 +1,5 @@
 const friends = [
   {
-    name: "樱花庄的白猫",
-    motto: "",
-    url: "https://2heng.xin",
-    avatar: "https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/friend/2heng2.jpg",
-    blog_img: "https://s3.bmp.ovh/imgs/2022/01/c7af17c7f6b58845.png",
-  },
-  {
-    name: "蝉时雨",
-    motto: "蝉鸣如雨，花宵道中",
-    url: "https://chanshiyu.com",
-    avatar: "https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/avatar.jpg",
-    blog_img: "https://s3.bmp.ovh/imgs/2022/01/aeb9b168bb68bf3b.png",
-  },
-  {
-    name: "Smile",
-    motto: "分享各种学习心得和遇到的问题",
-    url: "https://taoyida.top/blog/index",
-    avatar: "https://taoyida.top/static/img/bozhu.jpg",
-    blog_img: "https://s3.bmp.ovh/imgs/2022/01/0e1ca1a6a3a71a86.png",
-  },
-  {
-    name: "吾柯",
-    motto: "保持思考与理性",
-    url: "https://keepke.com/",
-    avatar: "https://keepke.com/logo.png",
-    blog_img: "https://s3.bmp.ovh/imgs/2022/01/ea99c10fe223f4a7.png",
-  },
-  {
-    name: "崽崽博客",
-    motto: "一个可爱崽",
-    url: "https://xll.cc",
-    avatar: "https://xll.cc/wj/photo/tx.jpg",
-    blog_img: "https://s3.bmp.ovh/imgs/2022/01/e6f22bb295e12a22.png",
-  },
-  {
     name: "卑微小H",
     motto: "学习、记事",
     url: "https://songhengsh.github.io/",
@@ -42,11 +7,11 @@ const friends = [
     blog_img: "https://s3.bmp.ovh/imgs/2022/01/fae60e61bc27932c.png",
   },
   {
-    name: "优世界",
-    motto: "记录美好生活与不平凡的你",
-    url: "https://usj.cc/",
-    avatar: "https://usj.cc/favicon.ico",
-    blog_img: "https://s3.bmp.ovh/imgs/2022/01/852d254286a1c21d.png",
+    name: "微若蜉蝣",
+    motto: "芸芸众生,皆为蜉蝣",
+    url: "https://fuyouplus.cn/",
+    avatar: "https://fuyouplus.cn/imgs/tx.jpg",
+    blog_img: "https://m.qpic.cn/psc?/V51noezu0WxJjn3TxupB3Z8gB92qiTAu/45NBuzDIW489QBoVep5mcap5Ani6vztY4G6kiBcxoPu*eZcaFLfNX.un7BFwmMU8sTP7.UFjdKEDS1Lrg6G4GnMCj1L2NZBL7lP2ZQAGJdA!/b&bo=fwfAAwAAAAADJ7k!&rf=viewer_4",
   },
 ];
 
