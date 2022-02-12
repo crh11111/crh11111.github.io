@@ -84,4 +84,22 @@ module.exports = {
       children: ["2022-1-28.md", "2022-1-31.md"],
     },
   ],
+  "/houduan/java/": [
+    {
+      text: "java",
+      title: "java",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["index.md"],
+    },
+  ],
+  "/houduan/nodejs/": [
+    {
+      text: "nodejs",
+      title: "nodejs",
+      collapsable: false,
+      sidebarDepth: 1,
+      children: ["index.md"],
+    },
+  ],
 };

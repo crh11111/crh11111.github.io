@@ -32,6 +32,13 @@ module.exports = [
       { text: "ElementUI", link: "/frontend/elementui/" },
     ],
   },
+  {
+    text: "后端",
+    children: [
+      { text: "Java", link: "/houduan/java/" },
+      { text: "Nodejs", link: "/houduan/nodejs/" },
+    ],
+  },
   // {
   //   text: "后端",
   //   children: [
