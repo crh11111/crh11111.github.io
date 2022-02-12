@@ -4,7 +4,9 @@ const sidebar = require("./config/sidebar");
 
 module.exports = {
   lang: "zh-CN",
-  head: [["link", { rel: "icon", href: "/imgs/logo.svg" }]],
+  head: [["link", { rel: "icon", href: "/imgs/logo.svg" }],
+  ["meta", { name: "referrer", content: "never" }],
+  ],
   title: "霧",
   description: "霧的个人博客",
   theme: path.resolve(__dirname, "./theme/index.js"),

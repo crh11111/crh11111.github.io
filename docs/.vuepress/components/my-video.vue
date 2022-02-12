@@ -3,9 +3,11 @@
     class="player"
     playsinline
     controls
+    webkit-playsinline
+    x-webkit-airplay="allow"
     :data-poster="indexBg"
     v-show="videoIsShow"
-    :crossorigin="src.includes('http')"
+    preload="metadata"
   >
     <source
       :src="src.includes('http') ? src : $withBase(src)"
