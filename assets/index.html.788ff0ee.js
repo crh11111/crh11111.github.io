@@ -1,0 +1,1 @@
+import{i as e,a as o,j as a}from"./app.5a4a9871.js";import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";const t={};function c(_,s){const n=e("kanpian");return o(),a(n)}var m=r(t,[["render",c]]);export{m as default};

@@ -1,0 +1,1 @@
+import{a as e,c as a,b as t,m as o}from"./app.5a4a9871.js";import{_ as r}from"./plugin-vue_export-helper.21dcd24c.js";const s={},c={id:"java",tabindex:"-1"},_=t("a",{class:"header-anchor",href:"#java","aria-hidden":"true"},"#",-1),n=o(" java"),d=[_,n];function i(h,f){return e(),a("h1",c,d)}var x=r(s,[["render",i]]);export{x as default};

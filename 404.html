@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.35">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/imgs/logo.svg"><meta name="referrer" content="never"><title>霧</title><meta name="description" content="霧的个人博客">
+    <link rel="modulepreload" href="/assets/app.5a4a9871.js"><link rel="modulepreload" href="/assets/404.html.93146c89.js"><link rel="modulepreload" href="/assets/404.html.bee13de6.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper.21dcd24c.js">
+    <link rel="stylesheet" href="/assets/style.d022f950.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><a class="not-found-page" href="/" data-v-70354c2a></a><!----><!--]--></div>
+    <script type="module" src="/assets/app.5a4a9871.js" defer></script>
+  </body>
+</html>

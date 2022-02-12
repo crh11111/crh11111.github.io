@@ -1,0 +1,1 @@
+import{t as s,a as r,c as _}from"./app.5a4a9871.js";import{s as c}from"./index.c0edad13.js";import{_ as p}from"./plugin-vue_export-helper.21dcd24c.js";const i={class:"aplayer"},u={props:{id:String},setup(e){const t=e;let{musicIds:a}=s(c),{id:o}=s(t);return a.value.push(o),(l,m)=>(r(),_("div",i))}};var v=p(u,[["__scopeId","data-v-5a66312c"]]);export{v as default};

@@ -1,0 +1,1 @@
+const t={key:"v-6ab9726a",path:"/life/note/2022-1-28.html",title:"\u521D\u96EA",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1643634003e3,contributors:[{name:"\u5FAE\u82E5\u8709\u8763",email:"2383155523@qq.com",commits:8}]},filePathRelative:"life/note/2022-1-28.md"};export{t as data};

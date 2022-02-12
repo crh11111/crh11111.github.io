@@ -1,0 +1,1 @@
+import{x as l,t as i,a as c,c as p,y as f,n as u,u as e}from"./app.5a4a9871.js";const S=l({props:{color:String,size:String,weight:String},setup(t){const o=t;let{color:s,size:n,weight:r}=i(o);return(a,g)=>(c(),p("span",{style:u({color:e(s),"font-size":e(n),"font-weight":e(r)})},[f(a.$slots,"default")],4))}});export{S as default};
