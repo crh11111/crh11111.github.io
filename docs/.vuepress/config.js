@@ -5,8 +5,8 @@ const sidebar = require("./config/sidebar");
 module.exports = {
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/imgs/logo.svg" }]],
-  title: "微若蜉蝣",
-  description: "微若蜉蝣的个人博客",
+  title: "霧",
+  description: "霧的个人博客",
   theme: path.resolve(__dirname, "./theme/index.js"),
   themeConfig: {
     logo: "/imgs/logo.svg",
